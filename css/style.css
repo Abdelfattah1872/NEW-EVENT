@@ -1,0 +1,485 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+/**************************************************** NAV BAR ****************************************************/ 
+#navbarNav .nav-link{
+transition: 0.5s;
+margin-left: 12px;
+color: orange;
+font-size: 12px;
+font-family: 'century gothic';
+}
+#navbarNav .nav-link{
+font-weight:bold;
+}
+#navbarNav .nav-link span{
+padding-bottom: 15px;
+}
+#navbarNav .nav-link:hover{
+transition: 0.1s;
+}
+.regis{
+color: black !important;
+background-color: orange !important;
+border-radius: 50px 50px !important;
+}
+.regis:hover{
+color: black !important;
+background-color: white !important;
+}
+.logo-text{
+color: white;
+font-family: 'century gothic';
+font-weight: bold;
+}
+/**************************************************** TOP BUTTON ****************************************************/ 
+#myBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 30px;
+z-index: 99;
+font-size: 18px;
+border: none;
+outline: none;
+background-color: gray;
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 4px;
+}
+#myBtn i{
+padding: 10px;
+font-size: 30px;
+}
+
+#myBtn:hover {
+background-color: black;
+transition: 1s;
+background-color: orange;
+}
+/**************************************************** FIRST SECTION ****************************************************/ 
+h1 {
+font-family: 'Lato', sans-serif;
+font-weight:300;
+letter-spacing: 2px;
+font-size:48px;
+}
+p {
+font-family: 'Lato', sans-serif;
+letter-spacing: 1px;
+font-size:18px;
+color: #333333;
+}
+
+.header {
+position:relative;
+text-align:center;
+background-image: url(../images/Artboard\ 1.png);
+background-attachment: fixed;
+z-index: 2;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.logo {
+width:50px;
+fill:orange;
+padding-right:15px;
+display:inline-block;
+vertical-align: middle;
+}
+
+.inner-header {
+height:65vh;
+width:100%;
+margin: 0;
+padding: 0;
+}
+
+.flex {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.waves {
+position:relative;
+width: 100%;
+height:15vh;
+margin-bottom:-7px;
+min-height:100px;
+max-height:150px;
+color: orange;
+}
+
+.content {
+position:relative;
+height:20vh;
+text-align:center;
+background-color: orange;
+}
+
+/**************************************************** ANIMATION ****************************************************/
+
+.parallax > use {
+animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+animation-delay: -2s;
+animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+animation-delay: -3s;
+animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+animation-delay: -4s;
+animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+animation-delay: -5s;
+animation-duration: 20s;
+}
+@keyframes move-forever {
+0% {
+transform: translate3d(-90px,0,0);
+}
+100% { 
+transform: translate3d(85px,0,0);
+}
+}
+
+@keyframes leftToright {
+0%{transform: translatex(-50px);opacity:0;}
+100%{transform: translatex(0px);opacity:1;}
+}
+@keyframes rightToleft {
+0%{transform: translatex(50px);opacity:0;}
+100%{transform: translatex(0px);opacity:1;}
+}
+/**************************************************** ONE TO ONE MEETING ****************************************************/
+.one-one .right-side h3 , h2{
+color: #494479;
+font-size: 20px;
+font-family: 'century gothic';
+}
+.one-one .right-side h2{
+color: #494479;
+font-family: 'century gothic';
+}
+.one-one .right-side p{
+color: #806d4a;
+font-family: 'century gothic';
+margin-top: 20px;
+}
+.one-one .right-side{
+animation-name:rightToleft ;
+animation-duration: 5s;
+}
+.one-one .left-side{
+animation-name:leftToright ;
+animation-duration: 4s;
+}
+/**************************************************** VIDEO SECTION ****************************************************/
+#myVideo {
+background-color: orange;
+bottom: 0;
+right: 0;
+bottom: 0;
+top: 0;
+width: 100%;
+}
+
+.contente {
+color: orange;
+width: 100%;
+padding: 20px;
+background-color: white;
+}
+
+#myBtne {
+width: 200px;
+font-size: 18px;
+padding: 10px;
+border: none;
+background: #000;
+color: #fff;
+cursor: pointer;
+}
+#myBtne:hover {
+background:orange;
+color: black;
+}
+.event{
+background-image: url(../images/event-back.png);
+background-repeat: no-repeat;
+width: 100%;
+height: 800px;
+}
+/**************************************************** LAST EVENT ****************************************************/
+.events{
+background-image: url(../images/event-back.png);
+background-repeat:repeat-y;
+}
+.last-event{
+font-family: 'century gothic';
+font-size: 50px;
+color: black;
+font-weight: bold;
+}
+.events .card-deck img:nth-child(1),.events .card-deck img:nth-child(2),.events .card-deck img:nth-child(3),.events .card-deck img:nth-child(4){
+animation: leftToright;
+animation-duration: 3s;
+}
+.events .card-deck img:nth-child(6),.events .card-deck img:nth-child(7),.events .card-deck img:nth-child(8),.events .card-deck img:nth-child(9){
+animation: rightToleft;
+animation-duration: 4s;
+}
+/**************************************************** EVENT SCHADULE ****************************************************/
+.schedule{
+background-color: black;
+}
+.schad-header{
+font-family: 'century gothic';
+}
+.schad-header h1{
+color: orange;
+font-size: 50px;
+font-weight: bold;
+font-family: 'century gothic';
+}
+.schad-header p{
+color: orange;
+font-family: 'century gothic';
+}
+.schedule .nav{
+margin-top: auto;
+border: 4px solid orange;
+background-color: #252525;
+}
+.schedule .nav button{
+color: #a8832e;
+padding: 20px;
+font-weight: bold;
+background-color: #252525;
+border: none;
+}
+.schedule .nav button:hover{
+color: white;
+opacity: 0.7;
+transition: linear 2s;
+}
+.schedule .first{
+display: block;
+}
+.schedule .second{
+display: none;
+}
+.schedule .third{
+display: none;
+}
+.schedule .forth{
+display: none;
+}
+/**************************************************** FEES ****************************************************/
+.FEES{
+background-color:cadetblue;
+}
+.FEES h2{
+color: orange;
+}
+.FEES h2 span{
+color: white;
+}
+.FEES.last-event{
+font-family: 'century gothic';
+font-size: 50px;
+}
+.mfnRate img:hover{
+opacity: 0.5;
+}
+.mfnRate{
+animation: leftToright;
+animation-duration: 3s;
+}
+.non-member{
+animation: rightToleft;
+animation-duration: 3s;
+}
+
+/**************************************************** FOOTER ****************************************************/
+footer{
+margin-top: 20px;
+background-color: black !important;
+}
+.footer-distributed{
+background: #666;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+color:  orange;
+font: normal 36px 'Open Sans', cursive;
+margin: 0;
+}
+
+.footer-distributed h3 span{
+color:  orange;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+color:  orange;
+margin: 20px 0 12px;
+padding: 0;
+}
+.footer-distributed .footer-links a{
+font-size: 11px;
+}
+.footer-distributed .footer-links a:hover{
+transition: 0.5s;
+color: white;
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+font-weight:400;
+text-decoration: none;
+color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+color:  white;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+.footer-distributed .footer-center i{
+background-color:  #33383b;
+color: orange;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+font-size: 17px;
+line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+display: inline-block;
+color: orange;
+font-weight:400;
+vertical-align: middle;
+margin:0;
+}
+
+.footer-distributed .footer-center p span{
+display:block;
+font-weight: normal;
+font-size:14px;
+line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+color:  orange;
+text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+content: "|";
+font-weight:300;
+font-size: 20px;
+left: 0;
+color: orange;
+display: inline-block;
+padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+line-height: 20px;
+color:  orange;
+font-size: 13px;
+font-weight: normal;
+margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+display: block;
+color:  orange;
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+
+font-size: 20px;
+color: orange;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+.env-mail{
+font-size: 23px;
+}

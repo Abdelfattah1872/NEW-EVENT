@@ -1,0 +1,150 @@
+@media screen and (max-width:768px){
+.one-one{
+flex-direction: column;
+}
+.one-one .left-side{
+width: 100% !important;
+display: block !important;
+}
+.one-one .right-side{
+width: 100% !important;
+text-align: left;
+font-size: 10px;
+}
+.events .card-deck{
+overflow: hidden;
+}
+.events .card-deck img{
+width: 35% !important;
+margin-top: 10px ;
+margin-bottom: 10px ;
+margin-right: 10px ;
+margin-left: 10px ;
+}
+.schedule .nav button{
+color: #a8832e;
+padding: 12px;
+font-weight: bold;
+background-color: #252525;
+border: none;
+}
+.waves {
+height:40px;
+min-height:40px;
+}
+.content {
+height:30vh;
+}
+h1 {
+font-size:24px;
+}
+.one-one .container{
+flex-direction: column;
+}
+.one-one .container .left-side{
+display: block !important;
+width: 100% !important;
+}
+.one-one .container .right-side{
+display: block !important;
+width: 100% !important;
+text-align: center !important;
+}
+.contente h1{
+font-size: 15px !important;
+}
+.contente p{
+font-size: 10px !important; 
+}
+#myBtne {
+width: 80px;
+font-size: 12px;
+}
+.inner-header img{
+width: 300px !important;
+}
+.content h3{
+font-size: 18px !important;
+}
+.content span{
+font-size: 20px !important;
+}
+.schedule h1{
+font-size: 20px !important;
+}
+.schedule p{
+font-size: 14px !important;
+}
+.schedule button{
+font-size: 12px !important;
+}
+.course .right-side{
+text-align: left !important;
+}
+.regis{
+background-color: black !important;
+color: white !important;
+}
+.regis:hover{
+border-bottom: 2px solid orange !important;
+}
+.log-img{
+display: none !important;
+}
+}
+
+@media (max-width: 880px) {
+.footer-distributed{
+font: bold 14px sans-serif;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: block;
+width: 100%;
+margin-bottom: 40px;
+text-align: center;
+}
+
+.footer-distributed .footer-center i{
+margin-left: 0;
+}
+.map .container .row iframe{
+margin: auto!important;
+}
+.content-two{
+margin-right: auto !important;
+margin-left: auto !important;
+}
+.FEES .mfnRate{
+flex-direction: column;
+}
+.FEES .mfnRate .member{
+margin: auto !important;
+}
+}
+
+
+@media (max-width: 1200px) {
+.FEES .mfnRate{
+flex-direction: column;
+overflow: hidden;
+flex-wrap: nowrap;
+}
+.FEES h2{
+font-size: 30px !important;
+}
+@media (min-width: 1024px) {
+    .FEES .mfnRate{
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    }
+    .FEES .mfnRate .member{
+    margin: auto !important;
+    }
+    .FEES h2{
+    font-size: 30px !important;
+    }
+    }
+}
