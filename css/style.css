@@ -4,7 +4,7 @@ padding: 0px;
 }
 /**************************************************** NAV BAR ****************************************************/ 
 #navbarNav .nav-link{
-transition: 0.5s;
+transition:linear 0.5s;
 margin-left: 12px;
 color: orange;
 font-size: 12px;
@@ -17,7 +17,8 @@ font-weight:bold;
 padding-bottom: 15px;
 }
 #navbarNav .nav-link:hover{
-transition: 0.1s;
+color: white;
+transition: linear 1s;
 }
 .regis{
 color: black !important;
@@ -33,6 +34,7 @@ color: white;
 font-family: 'century gothic';
 font-weight: bold;
 }
+
 /**************************************************** TOP BUTTON ****************************************************/ 
 #myBtn {
 display: none;
@@ -56,7 +58,7 @@ font-size: 30px;
 
 #myBtn:hover {
 background-color: black;
-transition: 1s;
+transition:linear 1s;
 background-color: orange;
 }
 /**************************************************** FIRST SECTION ****************************************************/ 
@@ -66,22 +68,23 @@ font-weight:300;
 letter-spacing: 2px;
 font-size:48px;
 }
-p {
+.loader {
 font-family: 'Lato', sans-serif;
 letter-spacing: 1px;
 font-size:18px;
 color: #333333;
+height: 150px !important;
 }
 
 .header {
 position:relative;
 text-align:center;
-background-image: url(../images/Artboard\ 1.png);
+background-image: url(../Assets/images/Artboard\ 1.png);
+z-index: 8;
 background-attachment: fixed;
-z-index: 2;
+background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-background-size: cover;
 }
 .logo {
 width:50px;
@@ -114,7 +117,6 @@ min-height:100px;
 max-height:150px;
 color: orange;
 }
-
 .content {
 position:relative;
 height:20vh;
@@ -129,7 +131,7 @@ animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
 }
 .parallax > use:nth-child(1) {
 animation-delay: -2s;
-animation-duration: 7s;
+animation-duration: 2s;
 }
 .parallax > use:nth-child(2) {
 animation-delay: -3s;
@@ -137,11 +139,11 @@ animation-duration: 10s;
 }
 .parallax > use:nth-child(3) {
 animation-delay: -4s;
-animation-duration: 13s;
+animation-duration: 7s;
 }
 .parallax > use:nth-child(4) {
 animation-delay: -5s;
-animation-duration: 20s;
+animation-duration: 8s;
 }
 @keyframes move-forever {
 0% {
@@ -152,36 +154,45 @@ transform: translate3d(85px,0,0);
 }
 }
 
-@keyframes leftToright {
-0%{transform: translatex(-50px);opacity:0;}
-100%{transform: translatex(0px);opacity:1;}
+@keyframes bottomTop {
+0%{transform: translatey(-50px);opacity:0;}
+100%{transform: translatey(0px);opacity:1;}
 }
-@keyframes rightToleft {
-0%{transform: translatex(50px);opacity:0;}
-100%{transform: translatex(0px);opacity:1;}
+@keyframes TopBottom {
+0%{transform: translatey(50px);opacity:0;}
+100%{transform: translatey(0px);opacity:1;}
+}
+.animation-schd{
+animation: TopBottom;
+animation-duration: 5s;
+}
+.animation-schd-left{
+animation: bottomTop;
+animation-duration: 5s;
 }
 /**************************************************** ONE TO ONE MEETING ****************************************************/
 .one-one .right-side h3 , h2{
-color: #494479;
-font-size: 20px;
+color: orange;
+font-size: 40px;
 font-family: 'century gothic';
 }
 .one-one .right-side h2{
-color: #494479;
+color:orange;
+font-weight:bold ;
 font-family: 'century gothic';
 }
 .one-one .right-side p{
-color: #806d4a;
+color: black;
 font-family: 'century gothic';
 margin-top: 20px;
 }
 .one-one .right-side{
-animation-name:rightToleft ;
+animation-name:TopBottom ;
 animation-duration: 5s;
 }
 .one-one .left-side{
-animation-name:leftToright ;
-animation-duration: 4s;
+animation-name:bottomTop ;
+animation-duration: 1s;
 }
 /**************************************************** VIDEO SECTION ****************************************************/
 #myVideo {
@@ -192,7 +203,6 @@ bottom: 0;
 top: 0;
 width: 100%;
 }
-
 .contente {
 color: orange;
 width: 100%;
@@ -214,42 +224,62 @@ background:orange;
 color: black;
 }
 .event{
-background-image: url(../images/event-back.png);
 background-repeat: no-repeat;
 width: 100%;
 height: 800px;
 }
 /**************************************************** LAST EVENT ****************************************************/
 .events{
-background-image: url(../images/event-back.png);
-background-repeat:repeat-y;
+position:relative;
+text-align:center;
+background-image: url(../Assets/images/bkglast.png);
+background-attachment: fixed;
+z-index: 2;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 .last-event{
 font-family: 'century gothic';
-font-size: 50px;
-color: black;
+font-size: 70px;
+color: white;
 font-weight: bold;
 }
 .events .card-deck img:nth-child(1),.events .card-deck img:nth-child(2),.events .card-deck img:nth-child(3),.events .card-deck img:nth-child(4){
-animation: leftToright;
+animation: bottomTop;
 animation-duration: 3s;
 }
-.events .card-deck img:nth-child(6),.events .card-deck img:nth-child(7),.events .card-deck img:nth-child(8),.events .card-deck img:nth-child(9){
-animation: rightToleft;
+.events .card-deck img:nth-child(5),.events .card-deck img:nth-child(6),.events .card-deck img:nth-child(7),.events .card-deck img:nth-child(8){
+animation: TopBottom;
 animation-duration: 4s;
 }
+
 /**************************************************** EVENT SCHADULE ****************************************************/
 .schedule{
-background-color: black;
+position:relative;
+text-align:center;
+background-image: url(../Assets/images/schad/bkg.png);
+z-index: 6;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.colo{
+color: white !important;
 }
 .schad-header{
 font-family: 'century gothic';
+border-bottom: 3px solid orange;
 }
 .schad-header h1{
 color: orange;
 font-size: 50px;
 font-weight: bold;
 font-family: 'century gothic';
+}
+.first-day h4{
+color: white;
 }
 .schad-header p{
 color: orange;
@@ -267,49 +297,256 @@ font-weight: bold;
 background-color: #252525;
 border: none;
 }
-.schedule .nav button:hover{
-color: white;
-opacity: 0.7;
-transition: linear 2s;
+.whole-day{
+overflow: hidden;
+flex-wrap: wrap;
+width: 100%;
 }
-.schedule .first{
-display: block;
+.first-cont-schd{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+width: 50%;
 }
-.schedule .second{
+.first-cont-schd h5,p{
+color: orange;
+font-size: 20px;
+font-family: 'century gothic';
+}
+#secondDay{
 display: none;
 }
-.schedule .third{
-display: none;
-}
-.schedule .forth{
+#forthDay{
 display: none;
 }
 /**************************************************** FEES ****************************************************/
 .FEES{
-background-color:cadetblue;
+position:relative;
+text-align:center;
+background-image: url(../Assets/images/800.png);
+background-attachment: fixed;
+z-index: 2;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
-.FEES h2{
+.FEES h4{
 color: orange;
-}
-.FEES h2 span{
-color: white;
-}
-.FEES.last-event{
 font-family: 'century gothic';
-font-size: 50px;
 }
-.mfnRate img:hover{
-opacity: 0.5;
+.FEES h4 span{
+color: white !important;
 }
 .mfnRate{
-animation: leftToright;
+animation: bottomTop;
 animation-duration: 3s;
 }
 .non-member{
-animation: rightToleft;
+animation: TopBottom;
 animation-duration: 3s;
 }
+.member{
+background-color: black;
+border: 2px solid orange;
+}
+.member img:hover{
+background-color: orange;
+transition: linear 1s;
+}
+.buttonre {
+position: relative;
+padding: 1em 1.5em;
+border: none;
+background-color: transparent;
+cursor: pointer;
+outline: none;
+font-size: 18px;
+font-family: 'century gothic';
+font-weight: bold;
+margin: 1em 0.8em;
+background-color: black;
+}
+.buttonre.type1 {
+color: white;
+}
+.buttonre.type1.type1::after, .buttonre.type1.type1::before {
+content: "";
+display: block;
+position: absolute;
+width: 20%;
+height: 20%;
+border: 2px solid;
+transition: all 0.6s ease;
+border-radius: 2px;
+}
+.buttonre.type1.type1::after {
+bottom: 0;
+right: 0;
+border-top-color: transparent;
+border-left-color: transparent;
+border-bottom-color: orange;
+border-right-color: orange;
+}
+.buttonre.type1.type1::before {
+top: 0;
+left: 0;
+border-bottom-color: transparent;
+border-right-color: transparent;
+border-top-color: orange;
+border-left-color:orange;
+}
+.buttonre.type1.type1:hover:after, .buttonre.type1.type1:hover:before {
+width: 100%;
+height: 100%;
+}
+/**************************************************** COURCES ****************************************************/
+.course .left-side{
+animation-name: bottomTop;
+animation-duration: 3s;
+}
+/**************************************************** HOTELS ****************************************************/
+#hotels{
+position:relative;
+text-align:center;
+background-image: url(../Assets/images/hotel\ bkg.png);
+background-attachment: fixed;
+z-index: 2;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.show-more{
+text-decoration: none !important;
+color: white;
+font-family: 'century gothic';
+background-color: black;
+border-radius: 50px 50px;
+}
+.show-more:hover{
+color: black;
+background-color: white;
+transition: 3s;
+}
+#hotels .card{
+background-color: rgba(0, 0, 0, 0);
+}
+#hotels a{
+border: none;
+}
+/**************************************************** SPONS ****************************************************/
+#sponser{
+position:relative;
+text-align:center;
+background-image: url(../Assets/images/spsBG.png);
+background-attachment: fixed;
+z-index: 2;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#sponser .show-more:hover{
+color: black;
+background-color: white;
+transition: 3s;
+}
+#sponser .card{
+background-color: rgba(0, 0, 0, 0);
+}
+#sponser a{
+border: none;
+}
+/**************************************************** CONTACT ****************************************************/
+#contact{
+position:relative;
+text-align:center;
+background-image: url(../Assets/images/contact.png);
+background-attachment: fixed;
+z-index: 2;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#contact label{
+color: white;
+}
+.mailer{
+background-color: rgba(0, 0, 0, 0.12) !important;
+}
+.mailer input{
+border:solid 3px black;
+background-color: darkgrey;
+border-radius:6px;
+padding:10px;
+font-size:20px;
+}
+.mailer sup{
+color:red;
+font-size:14px;
+}
+.mailer input[type=radio]{
+display:none;
+}
 
+.mailer{
+display:grid;
+grid-template-columns:10% auto 10%;
+}
+
+.mailer h1{
+grid-column:2;
+text-align:center;
+background-color: black;
+font-size:48px;
+}
+.mail-form{
+grid-column: 2;
+display:flex;
+flex-flow:column
+}
+
+.mail-reason{  
+min-width:100px;
+background-color:#DDD;
+padding:20px 6px;
+margin-right:6px;
+margin-left:6px;
+vertical-align: middle;
+min-height:32px;
+}
+.mail-reason >* {
+font-size:20px;
+text-align:center;
+
+font-weight:bold;
+}
+.mail-reason:hover{background-color:#EEE;
+transition:background-color 500ms;}
+.mail-reason:not(:hover){transition:background-color 500ms;}
+
+.option-grid{
+display:grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows:repeat(1,auto);
+}
+
+.tip-text{
+font-size:18px;
+text-align:center;
+padding:0px;
+background-color:#e7e7f6;
+height:0px;
+max-height:200px;
+overflow:hidden;
+transition:padding 300ms;
+transition:height 300ms;
+vertical-align:middle;
+}
+.sub:hover{
+background-color: white !important;
+color: black !important;
+transition: 3s;
+}
 /**************************************************** FOOTER ****************************************************/
 footer{
 margin-top: 20px;
@@ -335,7 +572,7 @@ vertical-align: top;
 /* Footer left */
 
 .footer-distributed .footer-left{
-width: 40%;
+width: 30%;
 }
 
 /* The company logo */
@@ -361,7 +598,7 @@ padding: 0;
 font-size: 11px;
 }
 .footer-distributed .footer-links a:hover{
-transition: 0.5s;
+transition:linear 0.5s;
 color: white;
 }
 
@@ -373,17 +610,18 @@ text-decoration: none;
 color:  inherit;
 }
 
-.footer-distributed .footer-company-name{
-color:  white;
+.footer-company-name{
+color:  white !important;
 font-size: 14px;
 font-weight: normal;
+width: 100% !important;
 margin: 0;
 }
 
 /* Footer Center */
 
 .footer-distributed .footer-center{
-width: 35%;
+width: 30%;
 }
 
 .footer-distributed .footer-center i{
@@ -469,7 +707,7 @@ display: inline-block;
 width: 35px;
 height: 35px;
 cursor: pointer;
-background-color:  #33383b;
+background-color:  black;
 border-radius: 2px;
 
 font-size: 20px;
@@ -481,5 +719,59 @@ margin-right: 3px;
 margin-bottom: 5px;
 }
 .env-mail{
-font-size: 23px;
+font-size: 25px;
+}
+.footer-distributed .footer-icons a img:hover{
+opacity: 0.5;
+transition: linear 0.4s;
+}
+
+/* ******************************************************************************* */
+.sponer-page{
+position:relative;
+text-align:center;
+background-image: url(../Assets/images/sponser/spsBG.png);
+background-attachment: fixed;
+z-index: 2;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.sponer-page .card{
+background-color: rgba(0, 0, 0, 0);
+}
+/* ******************************************************************************* */
+.Packages-sps .card .card-body{
+text-align: center !important;
+border: 3px solid orange;
+font-family: 'century gothic' !important;
+color: white !important;
+background-color: black !important;
+}
+.Packages-sps .card .card-body span{
+color: orange !important;
+}
+.Packages-sps .card .card-body p{
+color: white !important;
+}
+/* ******************************************************************************* */
+.Packages-categ{
+position:relative;
+text-align:center;
+background-image: url(../Assets/images/sponser/Packs/packs\ bkg.png);
+background-attachment: fixed;
+z-index: 2;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.Packages-categ .card-group .card{
+text-align: center;
+background-color: rgba(0, 0, 0, 0);
+}
+.Packages-categ .card-group .card:nth-child(2),.Packages-categ .card-group .card:nth-child(4){
+margin-top: 200px!important;
+}
+.Packages-categ .card-group .card .card-title{
+color: white;
 }
