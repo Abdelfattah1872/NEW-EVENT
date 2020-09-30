@@ -1,6 +1,6 @@
 <?php include("inc/theme/header.php");?>
 <?php include("inc/Database/db.php");?>
-
+<?php include("inc/theme/func.php");?>
 <!-- #####################################           NAV BAR             ################################################################# -->
 <!-- ##################################################################################################################################### -->
 <title>bangkok 2021 Event</title>
@@ -36,7 +36,7 @@
           <a class="nav-link" href="#sponser" style="border: 1px solid orange;"><span> BE SPONSE</span>R</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contactt" style="border: 1px solid orange;"><span>CONTA</span>CT</a>
+          <a class="nav-link" href="contact.php" style="border: 1px solid orange;"><span>CONTA</span>CT</a>
         </li>
         <li class="nav-item">
           <a class="nav-link regis" href="#">REGISTRATION</a>
@@ -239,7 +239,7 @@
 <!-- ###################################################################################################################################### -->
 <section class="FEES mt-2 m-auto" id="fees">
   <div class="container text-center">
-    <h2 class="p-5 last-event packeg" style="font-size: 70px !important; border-bottom: 3px solid orange;">PACKAGES</h2>
+    <h2 class="py-5 last-event packeg" style="font-size: 70px !important; border-bottom: 3px solid orange;">PACKAGES</h2>
       <div class="card-deck" style="justify-content: center;">
 
         <h4 class="p-3 last-event">MFN Family <span>Members</span> Rates</h4>
@@ -300,44 +300,13 @@
 <!-- ##################################                 BE SPONSER          ############################################################### -->
 <!-- ###################################################################################################################################### -->
 <section class="spons mt-2" id="sponser">
-  <h2 class="text-center m-auto display-2" style="color: black;background-color: white; font-weight: bold;">BE SPONSER</h2>
+  <h2 class="text-center m-auto display-2 w-100" style="color: black;background-color: white; font-weight: bold;">BE SPONSER</h2>
   <div class="container">
     <div class="card mt-3 text-white w-75 mx-auto">
       <img src="./Assets/images/sps.png" class="card-img">
-      <a href="./sponser.php" class="p-4 my-2 w-50 show-more mx-auto text-center">Get More About Our Packages</a>
+      <a href="./sponser.php" class="p-4 my-2  show-more mx-auto text-center">Get More About Our Packages</a>
   </div>
   </div>
-</section>
-<!-- ###################################                CONTACT US        ################################################################# -->
-<!-- ###################################################################################################################################### -->
-<h2 class="text-center m-auto display-2" style="color: black;background-color: white; font-weight: bold;" id="contactt">CONTACT</h2>
-<section class="mailer mt-2" id="contact">
-  <input type="radio" name="reason" id="Option-one" value="Quote Request -" />
-  <input type="radio" name="reason" id="Option-two" value="Product Question -" />
-  <input type="radio" name="reason" id="Option-three" value="Need Dealers -" />
-  <input type="radio" name="reason" id="Option-four" value="Looking for Solution -" />
-  <input type="radio" name="reason" id="Option-five" value="Becoming a Dealer -" />
-
-  <form class="mail-form w-50 m-auto text-left" method="post">
-    <label for="name"><h3>Name<sup>*</sup></h3></label>
-    <input type="text" id="name" name="name" placeholder="For Example: John Smith" required>
-
-    <label for="company"><h3>Company</h3></label>
-    <input type="text" id="company" name="company" placeholder="For Example: Company or Municipality name">
-
-    <label for="phone"><h3>Phone Number<sup>*</sup></h3></label>
-    <input type="phone" id="phone" name="phone" placeholder="For Example: +12345678"  required/>
-
-    <label for="email"><h3>E-mail<sup>*</sup></h3><h6></h6></label>
-    <input type="email" id="email" name="email" placeholder="For Example: info@mfnfamily.com" required>
-
-
-
-    <label for="message"><h3>Message</h3></label>
-    <textarea name="message" id="message" placeholder="Please Enter Your Message Here :)" class="text-center" style="border:solid 3px orange;height:300px;"></textarea>
-
-    <input type="submit" name="send" value="Send Message" class="my-3 sub" style="background-color: orange;color: black;">
-
 </section>
 <!-- ###################################                FOOTER             ################################################################ -->
 <!-- ###################################################################################################################################### -->
@@ -360,7 +329,7 @@
             
             <a href="#sponser">SPONSERS</a>
             
-            <a href="#contactt">CONTACT</a>
+            <a href="contact.php">CONTACT</a>
             
             <a href="">REGISTRATION</a>
         </p>
@@ -386,7 +355,7 @@
         </p>
     
         <div class="footer-icons">
-          <a href="https://www.facebook.com/MFNFamily" target="_blank"><img src="./Assets/images/social/iconfinder_square-facebook_317727.png" style="width: 30;height: 30px;" alt=""></a>
+          <a href="https://www.facebook.com/MFNFamily" target="_blank"><img src="./Assets/images/social/iconfinder_square-facebook_317727.png" style="width: 30px;height: 30px;" alt=""></a>
             <a href="https://twitter.com/mfnfamily" target="_blank"><img src="./Assets/images/social/iconfinder_twitter_386736.png" style="width: 30px;height: 30px;" alt=""></a>
             <a href="https://www.linkedin.com/in/mfnfamily/"target="_blank"><img src="./Assets/images/social/iconfinder_social_media_applications_14-linkedin_4102586.png" style="width: 30px;height: 30px;" alt=""></a>
             <a href="https://www.instagram.com/mfn_family/" target="_blank"><img src="./Assets/images/social/iconfinder_social-instagram-new-square2_1164347.png" style="width: 30px;height: 30px;" alt=""></a>

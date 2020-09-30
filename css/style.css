@@ -444,6 +444,8 @@ z-index: 2;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+flex-wrap: wrap !important;
+overflow: hidden !important;
 }
 #sponser .show-more:hover{
 color: black;
@@ -479,6 +481,9 @@ background-color: darkgrey;
 border-radius:6px;
 padding:10px;
 font-size:20px;
+}
+#messag{
+background-color: darkgray; !important;
 }
 .mailer sup{
 color:red;
