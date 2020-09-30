@@ -254,6 +254,4 @@
       </div>
       <p class="footer-company-name text-center mt-5 w-50" style="font-size: 20px;"><span style="border-bottom: 3px solid orange;">MFN FAMILY EVNENT 2020 © All Rights Reserved</span></p>
         </footer>
-<!-- ###################################                EXT FILES             ########################################################### -->
-<!-- #################################################################################################################################### -->
 <?php include("inc/theme/footer.php")?>
