@@ -101,9 +101,6 @@ width: 50% !important;
 margin-right:auto !important ;
 margin-left:auto !important ;
 }
-.show-more{
-width: 100% !important;
-}
 }
 
 @media (max-width: 880px) {
@@ -196,6 +193,13 @@ flex-flow:column
 .mail-form{
 width: 100% !important;
 }
+.Packages-categ .card-group{
+flex-direction: column !important;
+}
+.Packages-categ .card-group .card{
+width: 100% !important;
+margin: 10px !important;
+}
 }
 @media (max-width: 1200px) {
 .img-content #firstDay .whole-day{
@@ -221,6 +225,13 @@ flex-wrap: nowrap;
 }
 .FEES h2{
 font-size: 30px !important;
+}
+.Packages-categ .card-group{
+flex-direction: column !important;
+}
+.Packages-categ .card-group .card{
+width: 100% !important;
+margin: 10px !important;
 }
 }
 @media (min-width: 1024px) {

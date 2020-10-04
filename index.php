@@ -1,9 +1,8 @@
 <?php include("inc/theme/header.php");?>
 <?php include("inc/Database/db.php");?>
 <!-- #####################################           NAV BAR             ################################################################# -->
-<!-- ##################################################################################################################################### -->
-<title>bangkok 2021 Event</title>
-<div class="navbar-wrap" id="NvBar">
+<title>Event / Home</title>
+<section class="navbar-wrap" id="NvBar">
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;" id="navbar_top">
   <div class="container">
   <img src="./Assets/images/event logo.png" style="width: 100px; height: 100px;" class="navbar-brand" alt="">
@@ -38,18 +37,16 @@
           <a class="nav-link" href="contact.php" style="border: 1px solid orange;"><span>CONTA</span>CT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link regis" href="#">REGISTRATION</a>
+          <a class="nav-link regis" href="registration.php">REGISTRATION</a>
         </li>
       </ul>
      </div>
     </div>
   </nav>
-</div>
-<!-- ##################################################################################################################################### -->
+</section>
 <!-- ####################################          TOP BUTTON           ################################################################## -->
 <button id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 <!-- ####################################          ANIMATION WAVE       ################################################################## -->
-<!-- ##################################################################################################################################### -->
 <section class="header">
     <!--Content before waves-->
     <div class="inner-header flex">
@@ -73,14 +70,12 @@
     </div>
   </section>
 <!-- ######################################          HEADER SECTION        ################################################################ -->
-<!-- ###################################################################################################################################### -->
 <section class="content flex" style="background-color: orange;">
       <h3 style="font-family: 'century gothic';color: black;font-weight: bold;">Dear freight forwarders,
           We invite you to attend the 8th event in 
             <span style="color: white;font-weight: bold;font-size: 35px;">Bangkok, Thailand</span></h3>
       </section>
 <!-- #####################################           ONE 2 ONE            ################################################################# -->
-<!-- ###################################################################################################################################### -->
 <section class="one-one mt-2" id="event">
         <div class="container d-flex">
           <div class="left-side my-3">
@@ -97,7 +92,6 @@
         </div>
       </section>
 <!-- #########################################       VIDEO OF EVENT           ############################################################# -->
-<!-- ###################################################################################################################################### -->
 <section class="mt-2" id="video">
         <video autoplay muted loop id="myVideo">
           <source src="./Assets/videos/1.mp4" type="video/mp4">
@@ -113,7 +107,6 @@
           </div>
       </section>
 <!-- #######################################          EVENTS                ############################################################### -->
-<!-- ###################################################################################################################################### -->
 <section class="events mt-2 m-auto" id="eventIn">
         <div class="container mb-2 text-center">
           <h2 class="p-5 last-event">Our Last Events</h2>
@@ -129,7 +122,6 @@
               </div>
       </section>
 <!-- ####################################             schedule           ################################################################## -->
-<!-- ###################################################################################################################################### -->
 <section class="schedule mt-2" id="schedule">
         <div class="container">
           <div class="schad-header w-50 m-auto text-center">
@@ -216,7 +208,6 @@
         </div>
       </section>
 <!-- ###################################               COURCES          ################################################################### -->
-<!-- ###################################################################################################################################### -->
 <section class="course mt-2 one-one" id="event">
         <div class="container d-flex">
           <div class="left-side m-auto" id="thomas-img">
@@ -235,58 +226,56 @@
         </div>
       </section>
 <!-- ###################################                FEES            ################################################################### -->
-<!-- ###################################################################################################################################### -->
 <section class="FEES mt-2 m-auto" id="fees">
-  <div class="container text-center">
-    <h2 class="py-5 last-event packeg" style="font-size: 70px !important; border-bottom: 3px solid orange;">PACKAGES</h2>
-      <div class="card-deck" style="justify-content: center;">
+    <div class="container text-center">
+        <h2 class="p-5 last-event packeg" style="font-size: 70px !important; border-bottom: 3px solid orange;">PACKAGES</h2>
+        <div class="card-deck" style="justify-content: center;">
 
-        <h4 class="p-3 last-event">MFN Family <span>Members</span> Rates</h4>
-        <div class="mfnRate w-100 d-flex m-auto">
-          <div class="member w-100">
-            <img src="./Assets/images/fees/1.png" class="m-auto w-100" alt="">
-            <button class="buttonre type1">REGISTER</button>
-          </div>
+            <h4 class="p-3 last-event">MFN Family <span>Members</span> Rates</h4>
+            <div class="mfnRate w-100 d-flex m-auto">
+                <div class="member w-100">
+                    <img src="./Assets/images/fees/1.png" class="m-auto w-100" alt="">
+                    <button class="buttonre type1">REGISTER</button>
+                </div>
 
-          <div class="member w-100">
-            <img src="./Assets/images/fees/2.png" class="m-auto w-100" alt="">
-            <button class="buttonre type1">REGISTER</button>
-          </div>
+                <div class="member w-100">
+                    <img src="./Assets/images/fees/2.png" class="m-auto w-100" alt="">
+                    <button class="buttonre type1">REGISTER</button>
+                </div>
 
-          <div class="member w-100">
-            <img src="./Assets/images/fees/3.png" class="m-auto w-100" alt="">
-            <button class="buttonre type1">REGISTER</button>
-          </div>
+                <div class="member w-100">
+                    <img src="./Assets/images/fees/3.png" class="m-auto w-100" alt="">
+                    <button class="buttonre type1">REGISTER</button>
+                </div>
 
-          <div class="member w-100">
-            <img src="./Assets/images/fees/4.png" class="m-auto w-100" alt="">
-            <button class="buttonre type1">REGISTER</button>
-          </div>
-          </div>
+                <div class="member w-100">
+                    <img src="./Assets/images/fees/4.png" class="m-auto w-100" alt="">
+                    <button class="buttonre type1">REGISTER</button>
+                </div>
+            </div>
 
-          <h4 class="p-3 last-event">MFN Family <span>NON-Members</span> Rates</h4>
-        <div class="mfnRate non-member w-100 d-flex m-auto">
-          <div class="member w-100">
-            <img src="./Assets/images/fees/11.png"  class="m-auto w-100" alt="">
-            <button class="buttonre type1">REGISTER</button>
-          </div>
-          <div class="member w-100">
-            <img src="./Assets/images/fees/22.png"  class="m-auto w-100" alt="">
-            <button class="buttonre type1">REGISTER</button>
-          </div>
-          <div class="member w-100">
-            <img src="./Assets/images/fees/33.png"  class="m-auto w-100" alt="">
-            <button class="buttonre type1">REGISTER</button>
-          </div>
-          <div class="member w-100">
-            <img src="./Assets/images/fees/44.png"  class="m-auto w-100" alt="">
-            <button class="buttonre type1">REGISTER</button>
-          </div>
-        </div> 
+            <h4 class="p-3 last-event">MFN Family <span>NON-Members</span> Rates</h4>
+            <div class="mfnRate non-member w-100 d-flex m-auto">
+                <div class="member w-100">
+                    <img src="./Assets/images/fees/11.png"  class="m-auto w-100" alt="">
+                    <button class="buttonre type1">REGISTER</button>
+                </div>
+                <div class="member w-100">
+                    <img src="./Assets/images/fees/22.png"  class="m-auto w-100" alt="">
+                    <button class="buttonre type1">REGISTER</button>
+                </div>
+                <div class="member w-100">
+                    <img src="./Assets/images/fees/33.png"  class="m-auto w-100" alt="">
+                    <button class="buttonre type1">REGISTER</button>
+                </div>
+                <div class="member w-100">
+                    <img src="./Assets/images/fees/44.png"  class="m-auto w-100" alt="">
+                    <button class="buttonre type1">REGISTER</button>
+                </div>
+            </div>
         </div>
 </section>
 <!-- ##################################                 HOTEL            ################################################################## -->
-<!-- ###################################################################################################################################### -->
 <section class="mt-2" id="hotels">
   <h2 class="text-center m-auto display-2" style="color: white;background-color: black; font-weight: bold;">HOTEL</h2>
   <div class="container">
@@ -297,7 +286,6 @@
   </div>
 </section>
 <!-- ##################################                 BE SPONSER          ############################################################### -->
-<!-- ###################################################################################################################################### -->
 <section class="spons mt-2" id="sponser">
   <h2 class="text-center m-auto display-2 w-100" style="color: black;background-color: white; font-weight: bold;">BE SPONSER</h2>
   <div class="container">
@@ -308,7 +296,6 @@
   </div>
 </section>
 <!-- ###################################                FOOTER             ################################################################ -->
-<!-- ###################################################################################################################################### -->
 <footer id="support" class="footer-distributed mt-0">
     <div class="container">
       <div class="footer-left mx-4 my-auto text-center" style="letter-spacing: unset;">
@@ -330,7 +317,7 @@
             
             <a href="contact.php">CONTACT</a>
             
-            <a href="">REGISTRATION</a>
+            <a href="registration.php">REGISTRATION</a>
         </p>
       </div>
       
@@ -366,5 +353,8 @@
       <p class="footer-company-name text-center mt-5 w-50" style="font-size: 20px;"><span style="border-bottom: 3px solid orange;">MFN FAMILY EVNENT 2020 © All Rights Reserved</span></p>
         </footer>
 <!-- ###################################                EXT FILES             ############################################################# -->
-<!-- ###################################################################################################################################### -->
 <?php include("inc/theme/footer.php")?>
+<script src="./js/home.js"></script>
+</body>
+</html>
+

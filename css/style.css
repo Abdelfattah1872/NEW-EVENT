@@ -322,83 +322,88 @@ display: none;
 }
 /**************************************************** FEES ****************************************************/
 .FEES{
-position:relative;
-text-align:center;
-background-image: url(../Assets/images/800.png);
-background-attachment: fixed;
-z-index: 2;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    position:relative;
+    text-align:center;
+    background-image: url(../Assets/images/800.png);
+    background-attachment: fixed;
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .FEES h4{
-color: orange;
-font-family: 'century gothic';
+    color: orange;
+    font-family: 'century gothic';
 }
 .FEES h4 span{
-color: white !important;
+    color: white !important;
 }
 .mfnRate{
-animation: bottomTop;
-animation-duration: 3s;
+    animation: bottomTop;
+    animation-duration: 3s;
 }
 .non-member{
-animation: TopBottom;
-animation-duration: 3s;
+    animation: TopBottom;
+    animation-duration: 3s;
 }
 .member{
-background-color: black;
-border: 2px solid orange;
+    background-color: black;
+    border: 2px solid orange;
 }
 .member img:hover{
-background-color: orange;
-transition: linear 1s;
+    background-color: orange;
+    transition: linear 1s;
 }
 .buttonre {
-position: relative;
-padding: 1em 1.5em;
-border: none;
-background-color: transparent;
-cursor: pointer;
-outline: none;
-font-size: 18px;
-font-family: 'century gothic';
-font-weight: bold;
-margin: 1em 0.8em;
-background-color: black;
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    font-family: 'century gothic';
+    font-weight: bold;
+    margin: 1em 0.8em;
+    background-color: white;
 }
 .buttonre.type1 {
-color: white;
+    color: white;
 }
 .buttonre.type1.type1::after, .buttonre.type1.type1::before {
-content: "";
-display: block;
-position: absolute;
-width: 20%;
-height: 20%;
-border: 2px solid;
-transition: all 0.6s ease;
-border-radius: 2px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
 }
 .buttonre.type1.type1::after {
-bottom: 0;
-right: 0;
-border-top-color: transparent;
-border-left-color: transparent;
-border-bottom-color: orange;
-border-right-color: orange;
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: orange;
+    border-right-color: orange;
 }
 .buttonre.type1.type1::before {
-top: 0;
-left: 0;
-border-bottom-color: transparent;
-border-right-color: transparent;
-border-top-color: orange;
-border-left-color:orange;
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: orange;
+    border-left-color:orange;
 }
 .buttonre.type1.type1:hover:after, .buttonre.type1.type1:hover:before {
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+/**************************************************** COURCES ****************************************************/
+.course .left-side{
+    animation-name: bottomTop;
+    animation-duration: 3s;
 }
 /**************************************************** COURCES ****************************************************/
 .course .left-side{
@@ -444,13 +449,11 @@ z-index: 2;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-flex-wrap: wrap !important;
-overflow: hidden !important;
 }
 #sponser .show-more:hover{
 color: black;
 background-color: white;
-transition: 3s;
+transition: 1s;
 }
 #sponser .card{
 background-color: rgba(0, 0, 0, 0);
@@ -481,9 +484,6 @@ background-color: darkgrey;
 border-radius:6px;
 padding:10px;
 font-size:20px;
-}
-#messag{
-background-color: darkgray; !important;
 }
 .mailer sup{
 color:red;
@@ -779,4 +779,8 @@ margin-top: 200px!important;
 }
 .Packages-categ .card-group .card .card-title{
 color: white;
+}
+/* ******************************************************************************************* */
+.final-reset{
+display: none;
 }

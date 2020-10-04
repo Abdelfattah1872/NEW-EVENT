@@ -33,7 +33,7 @@ if(isset($_POST['send'])) {
     }
 } ?>
 <!--######################################################################## START CONTENT ###############################################-->
-<title>CONTACT US</title>
+<title>Event / Contact US</title>
 <button id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 <!-- #####################################           NAV BAR             ############################################################## -->
 <div class="navbar-wrap" id="NvBar">
@@ -128,3 +128,7 @@ if(isset($_POST['send'])) {
 </footer>
 <!--######################################################################## END CONTENT ###############################################-->
 <?php include("inc/theme/footer.php")?>
+<script src="./js/main.js"></script>
+</body>
+</html>
+

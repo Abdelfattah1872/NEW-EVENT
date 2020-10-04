@@ -1,33 +1,32 @@
 <?php include("inc/theme/header.php");?>
 <!-- ################################################################################################################################### -->
 <!-- #####################################          TOP BUTTON           ############################################################### -->
-<title>SPONSERS</title>
+<title>Event / Sponser </title>
 <button id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 <!-- #####################################           NAV BAR             ############################################################## -->
 <!-- ################################################################################################################################## -->
 <div class="navbar-wrap" id="NvBar">
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;" id="navbar_top">
-  <div class="container">
-  <img src="./Assets/images/event logo.png" style="width: 100px; height: 100px;" class="navbar-brand" alt="">
-  <!-- <span class="logo-text">MFN FAMILY'S 8th EVENT-2021</span> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse text-left" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="./index.php" style="border: 1px solid orange;"><span>HOM</span>E</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#packs" style="border: 1px solid orange;"><span>PACKAGES</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#categ" style="border: 1px solid orange;"><span>CATEGORIES</span></a>
-      </li>
-       </ul>
-     </div>
-   </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;" id="navbar_top">
+      <div class="container">
+      <img src="./Assets/images/event logo.png" style="width: 100px; height: 100px;" class="navbar-brand" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-left" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.php" style="border: 1px solid orange;"><span>HOM</span>E</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packs" style="border: 1px solid orange;"><span>PACKAGES</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#categ" style="border: 1px solid orange;"><span>CATEGORIES</span></a>
+          </li>
+           </ul>
+         </div>
+       </div>
+   </nav>
 </div>
 <!-- ######################################           INTRO               ############################################################## -->
 <!-- ################################################################################################################################### -->
@@ -255,3 +254,6 @@
       <p class="footer-company-name text-center mt-5 w-50" style="font-size: 20px;"><span style="border-bottom: 3px solid orange;">MFN FAMILY EVNENT 2020 © All Rights Reserved</span></p>
         </footer>
 <?php include("inc/theme/footer.php")?>
+<script src="./js/main.js"></script>
+</body>
+</html>
