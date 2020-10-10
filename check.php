@@ -1,39 +1,7 @@
 <?php include("inc/theme/header.php");?>
 <?php include("inc/Database/db.php");?>
 <?php include("inc/theme/func.php");?>
-<?php
-// send Message to DataBase
-if(isset($_POST['send'])) {
-    $name = santString($_POST['name']);
-    $comp= santString($_POST['name']);
-    $email = santEmail($_POST['email']);
-    $phone = $_POST["phone"];
-    $message = santString($_POST['message']);
-    if(requiredInput($name) &&  requiredInput($email) &&  requiredInput($comp) ) {
-        if(minInput($name,3) && maxInput($password,150)) {
-            if(validEmail($email)) {
-                $sql = "INSERT INTO `contact` (`name`,`company_name`,`phone_number`,`Email`,`message`)
-                        VALUES ('$name','$comp','$phone','$email','$message')  ";
-                $result = mysqli_query($conn,$sql);
-                if($result) {
-                    $success = "Thanks for your message :)";
-                    $page = $_SERVER['PHP_SELF'];
-                    $sec = "3";
-                    header("Refresh: $sec; url=$page");
-                }
-            } else {
-                $error = "Please Type Valid Email !";
-            }
-        } else {
-            $error = "Name Must Be Grater Than 3 Chars / Message Must Be Less Than 150 Chars";
-        }
-    } else {
-        $error =  "Please Fill All  Fields !";
-    }
-} ?>
-<!--######################################################################## START CONTENT ###############################################-->
-<title>Event / Contact US</title>
-<button id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+<!--########################################################################--------- START CONTENT------- ###############################################-->
 <!-- #####################################           NAV BAR             ############################################################## -->
 <div class="navbar-wrap" id="NvBar">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;" id="navbar_top">
@@ -53,39 +21,82 @@ if(isset($_POST['send'])) {
         </div>
     </nav>
 </div>
-<!-- ###################################                CONTACT US        ################################################################# -->
-<h2 class="text-center m-auto display-2" style="color: black;background-color: white; font-weight: bold;" id="contactt">CONTACT</h2>
-<!--Error-->
-<?php if($error): ?>
-<h5 class="alert alert-danger text-center"><?php echo $error; ?></h5>
-<?php endif;  ?>
-<!--Success-->
-<?php if($success): ?>
-<h5 class="alert alert-success text-center"><?php echo $success; ?></h5>
-<?php endif;  ?>
-<section class="mailer mt-2" id="contact">
-    <form class="mail-form w-50 m-auto text-left" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <label for="name"><h3>Name <sup>* </sup></h3></label>
-        <input type="text" id="name" name="name" style="outline: none;" placeholder="For Example: John Smith" required>
-
-        <label for="company"><h3>Company <sup>*</sup></h3></label>
-        <input type="text" id="company" name="company" style="outline: none;" placeholder="For Example: Company or Municipality name">
-
-        <label for="phone"><h3>Phone Number <sup>*</sup></h3></label>
-        <input type="phone" id="phone" name="phone" style="outline: none;" placeholder="For Example: +12345678"  required/>
-
-        <label for="email"><h3>E-mail <sup>*</sup></h3><h6></h6></label>
-        <input type="email" id="email" name="email" placeholder="For Example: info@mfnfamily.com" style="outline: none;" required>
-
-
-        <label for="message"><h3>Message <sup>*</sup></h3></label>
-        <textarea name="message" id="message" placeholder="Please Enter Your Message Here :)" class="text-center" style="outline: none;border:solid 3px black;height:200px;background-color: darkgray;"></textarea>
-
-        <input type="submit" name="send" value="Send Message" class="my-3 sub" style="background-color: orange;color: black;outline: none;">
-
+<!-- #####################################           Registration            ############################################################## -->
+<section id="regestration my-2">
+    <div class="container">
+        <h2 class="text-center m-auto display-2" style="color: black;background-color: white; font-weight: bold;border-bottom: 3px solid orange">CONFIRM YOUR REQUEST</h2>
+            <div class="final-reset d-block mt-5">
+                <table class="table table-dark comp-data">
+                    <h6>Company information :</h6>
+                    <thead>
+                    <tr>
+                        <th scope="col">MFN member :</th>
+                        <th scope="col">Company Name:</th>
+                        <th scope="col">Company Phone:</th>
+                        <th scope="col">Company Country:</th>
+                        <th scope="col">Company City:</th>
+                        <th scope="col">Company Address:</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- Before Check delgete info  -->
+                <table class="table table-dark dele-data">
+                    <h6>Delgete information :</h6>
+                    <thead>
+                    <tr>
+                        <th scope="col">Delgete Name:</th>
+                        <th scope="col">Delgete Phone:</th>
+                        <th scope="col">Delgete Email:</th>
+                        <th scope="col">Delgete Position:</th>
+                        <th scope="col">Number of Extra Delgete :</th>
+                        <th scope="col">Number of Kids :</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- Before Check delgete info  -->
+                <table class="table table-dark dele-data w-25 mx-auto text-center">
+                    <h6 class="text-center">Coast :</h6>
+                    <thead>
+                    <tr>
+                        <th scope="col">total Fees :</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        <form class="text-center my-4" action="" method="post">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Extra Information :</label>
+                <textarea class="form-control text-center" placeholder="For Example : Extra Delgete Information, Kids, Special Message For Us , ...etc." style="height: 200px"></textarea>
+            </div>
+            <button type="submit" class="btn w-25 p-3" style="background-color: orange;color: black;font-weight: bold;border: none;outline: none">CONFIRM</button>
+        </form>
+        </div>
 </section>
-<!-- ####################################          TOP BUTTON           ################################################################## -->
-<button id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 <!-- ###################################                FOOTER             ############################################################## -->
 <footer id="support" class="footer-distributed mt-0">
     <div class="container">
@@ -127,9 +138,8 @@ if(isset($_POST['send'])) {
     </div>
     <p class="footer-company-name text-center mt-5 w-50" style="font-size: 20px;"><span style="border-bottom: 3px solid orange;">MFN FAMILY EVNENT 2020 © All Rights Reserved</span></p>
 </footer>
-<!--######################################################################## END CONTENT ###############################################-->
+<!--########################################################################----------- END CONTENT------- ###############################################-->
 <?php include("inc/theme/footer.php")?>
 <script src="./js/main.js"></script>
 </body>
 </html>
-

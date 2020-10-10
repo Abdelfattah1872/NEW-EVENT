@@ -320,6 +320,8 @@ display: none;
 #forthDay{
 display: none;
 }
+
+
 /**************************************************** FEES ****************************************************/
 .FEES{
     position:relative;
@@ -365,10 +367,8 @@ display: none;
     font-family: 'century gothic';
     font-weight: bold;
     margin: 1em 0.8em;
-    background-color: white;
-}
-.buttonre.type1 {
-    color: white;
+    background-color: orange;
+    color: black ;
 }
 .buttonre.type1.type1::after, .buttonre.type1.type1::before {
     content: "";
@@ -376,7 +376,7 @@ display: none;
     position: absolute;
     width: 20%;
     height: 20%;
-    border: 2px solid;
+    border: 5px solid;
     transition: all 0.6s ease;
     border-radius: 2px;
 }
@@ -385,16 +385,16 @@ display: none;
     right: 0;
     border-top-color: transparent;
     border-left-color: transparent;
-    border-bottom-color: orange;
-    border-right-color: orange;
+    border-bottom-color: white;
+    border-right-color: white;
 }
 .buttonre.type1.type1::before {
     top: 0;
     left: 0;
     border-bottom-color: transparent;
     border-right-color: transparent;
-    border-top-color: orange;
-    border-left-color:orange;
+    border-top-color: white;
+    border-left-color:white;
 }
 .buttonre.type1.type1:hover:after, .buttonre.type1.type1:hover:before {
     width: 100%;
@@ -781,6 +781,3 @@ margin-top: 200px!important;
 color: white;
 }
 /* ******************************************************************************************* */
-.final-reset{
-display: none;
-}

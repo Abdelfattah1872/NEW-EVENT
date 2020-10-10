@@ -1,5 +1,6 @@
 <?php include("inc/theme/header.php");?>
 <?php include("inc/Database/db.php");?>
+<!-- ###################################-------------------Start Content-------------------############################################################# -->
 <!-- #####################################           NAV BAR             ################################################################# -->
 <title>Event / Home</title>
 <section class="navbar-wrap" id="NvBar">
@@ -130,16 +131,16 @@
           </div>
           <ul class="nav my-5">
             <li class="nav-item mx-auto">
-              <button class="nav-link colo" id="first-butn">1st day</button>
+              <button class="nav-link colo" id="first-butn" style="outline:none !important;">1st day</button>
             </li>
             <li class="nav-item mx-auto">
-              <button class="nav-link"  id="second-butn">2nd day</button>
+              <button class="nav-link"  id="second-butn" style="outline:none !important;">2nd day</button>
             </li>
             <li class="nav-item mx-auto">
-              <button class="nav-link" id="third-butn">3rd day</button>
+              <button class="nav-link" id="third-butn" style="outline:none !important;">3rd day</button>
             </li>
             <li class="nav-item mx-auto">
-              <button class="nav-link" id="forth-butn">4th day</button>
+              <button class="nav-link" id="forth-butn" style="outline:none !important;">4th day</button>
             </li>
           </ul>
 
@@ -235,22 +236,22 @@
             <div class="mfnRate w-100 d-flex m-auto">
                 <div class="member w-100">
                     <img src="./Assets/images/fees/1.png" class="m-auto w-100" alt="">
-                    <button class="buttonre type1">REGISTER</button>
+                    <button class="buttonre type1"style="outline: none">REGISTER</button>
                 </div>
 
                 <div class="member w-100">
                     <img src="./Assets/images/fees/2.png" class="m-auto w-100" alt="">
-                    <button class="buttonre type1">REGISTER</button>
+                    <button class="buttonre type1" style="outline: none">REGISTER</button>
                 </div>
 
                 <div class="member w-100">
                     <img src="./Assets/images/fees/3.png" class="m-auto w-100" alt="">
-                    <button class="buttonre type1">REGISTER</button>
+                    <button class="buttonre type1" style="outline: none">REGISTER</button>
                 </div>
 
                 <div class="member w-100">
                     <img src="./Assets/images/fees/4.png" class="m-auto w-100" alt="">
-                    <button class="buttonre type1">REGISTER</button>
+                    <button class="buttonre type1" style="outline: none">REGISTER</button>
                 </div>
             </div>
 
@@ -258,19 +259,19 @@
             <div class="mfnRate non-member w-100 d-flex m-auto">
                 <div class="member w-100">
                     <img src="./Assets/images/fees/11.png"  class="m-auto w-100" alt="">
-                    <button class="buttonre type1">REGISTER</button>
+                    <button class="buttonre type1" style="outline: none">REGISTER</button>
                 </div>
                 <div class="member w-100">
                     <img src="./Assets/images/fees/22.png"  class="m-auto w-100" alt="">
-                    <button class="buttonre type1">REGISTER</button>
+                    <button class="buttonre type1" style="outline: none">REGISTER</button>
                 </div>
                 <div class="member w-100">
                     <img src="./Assets/images/fees/33.png"  class="m-auto w-100" alt="">
-                    <button class="buttonre type1">REGISTER</button>
+                    <button class="buttonre type1" style="outline: none">REGISTER</button>
                 </div>
                 <div class="member w-100">
                     <img src="./Assets/images/fees/44.png"  class="m-auto w-100" alt="">
-                    <button class="buttonre type1">REGISTER</button>
+                    <button class="buttonre type1" style="outline: none">REGISTER</button>
                 </div>
             </div>
         </div>
@@ -352,7 +353,7 @@
       </div>
       <p class="footer-company-name text-center mt-5 w-50" style="font-size: 20px;"><span style="border-bottom: 3px solid orange;">MFN FAMILY EVNENT 2020 © All Rights Reserved</span></p>
         </footer>
-<!-- ###################################                EXT FILES             ############################################################# -->
+<!-- ###################################-------------------End Content-------------------############################################################# -->
 <?php include("inc/theme/footer.php")?>
 <script src="./js/home.js"></script>
 </body>
