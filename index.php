@@ -38,7 +38,7 @@
           <a class="nav-link" href="contact.php" style="border: 1px solid orange;"><span>CONTA</span>CT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link regis" href="registration.php">REGISTRATION</a>
+          <a class="nav-link" href="registration.php" style="border: 3px solid orange;">REGISTRATION</a>
         </li>
       </ul>
      </div>

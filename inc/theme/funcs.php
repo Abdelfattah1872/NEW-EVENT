@@ -34,7 +34,6 @@ function santEmail($email)
 }
 
 
-
 // minimum number
 
 function minInput($value,$min)
@@ -157,7 +156,6 @@ function check_coast($pack,$ex_del,$ex_kid,$spose,$p_pack_one,$p_ex_del_one,$p_e
 }
 
 
-
 // validate fees counter without accomndation
 function check_coast_without($pack,$ex_del,$p_pack_one,$p_ex_del_one,$num_del,$p_pack_two,$p_ex_del_two){
     $cost = array();
@@ -185,7 +183,6 @@ function check_coast_without($pack,$ex_del,$p_pack_one,$p_ex_del_one,$num_del,$p
         return array_sum($cost);
     }
 }
-
 
 
 ///////////////////////////////////////////////////////////////////////////////////  FEES FOR ALL CATGS //////////////////////////////////////////////////////////////////////////////////////////

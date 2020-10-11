@@ -20,15 +20,15 @@ padding-bottom: 15px;
 color: white;
 transition: linear 1s;
 }
-.regis{
-color: black !important;
-background-color: orange !important;
-border-radius: 50px 50px !important;
-}
-.regis:hover{
-color: black !important;
-background-color: white !important;
-}
+/*.regis{*/
+/*color: black !important;*/
+/*background-color: orange !important;*/
+/*border-radius: 30px 30px !important;*/
+/*}*/
+/*.regis:hover{*/
+/*color: black !important;*/
+/*background-color: white !important;*/
+/*}*/
 .logo-text{
 color: white;
 font-family: 'century gothic';
