@@ -210,12 +210,12 @@
       </section>
 <!-- ###################################               COURCES          ################################################################### -->
 <section class="course mt-2 one-one" id="event">
-        <div class="container d-flex">
-          <div class="left-side m-auto" id="thomas-img">
-            <img src="./Assets/images/schad/thomas.png" class="img-fluid my-2 mx-auto" alt="Responsive image">
+        <div class="container">
+          <div class="left-side mx-auto w-75" id="thomas-img">
+            <img src="./Assets/images/schad/thomas.png" class="img-fluid" alt="Responsive image">
           </div>
 
-          <div class="right-side w-100 mx-4  my-auto ">
+          <div class="right-side w-100 m-auto ">
             <h2 class="mt-5 text-left">FREIGHT & LOGISTICS COURSE</h2>
               <p class="text-left">Certified By Mr.Thomas Sim
                 The diploma is a world-wide recognized vocational 

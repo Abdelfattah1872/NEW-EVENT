@@ -53,6 +53,8 @@ if(isset($_POST['send'])) {
         </div>
     </nav>
 </div>
+<!-- #####################################           UP BUTTON             ############################################################## -->
+<button id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 <!-- ###################################                CONTACT US        ################################################################# -->
 <h2 class="text-center m-auto display-2" style="color: black;background-color: white; font-weight: bold;" id="contactt">CONTACT</h2>
 <!--Error-->
