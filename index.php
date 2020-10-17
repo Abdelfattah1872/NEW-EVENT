@@ -38,7 +38,7 @@
           <a class="nav-link" href="contact.php" style="border: 1px solid orange;"><span>CONTA</span>CT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="registration.php" style="border: 3px solid orange;">REGISTRATION</a>
+          <a class="nav-link" href="registration.php" style="border: 3px solid orange;background-color: white !important;color: black">REGISTRATION</a>
         </li>
       </ul>
      </div>
@@ -210,12 +210,12 @@
       </section>
 <!-- ###################################               COURCES          ################################################################### -->
 <section class="course mt-2 one-one" id="event">
-        <div class="container">
-          <div class="left-side mx-auto w-75" id="thomas-img">
-            <img src="./Assets/images/schad/thomas.png" class="img-fluid" alt="Responsive image">
+        <div class="container d-flex">
+          <div class="left-side m-auto w-75 mx-3 mb-3" id="thomas-img">
+            <img src="./Assets/images/schad/thomas.png" class="img-fluid mb-2" alt="Responsive image">
           </div>
 
-          <div class="right-side w-100 m-auto ">
+          <div class="right-side w-75 m-3">
             <h2 class="mt-5 text-left">FREIGHT & LOGISTICS COURSE</h2>
               <p class="text-left">Certified By Mr.Thomas Sim
                 The diploma is a world-wide recognized vocational 
@@ -230,51 +230,155 @@
 <section class="FEES mt-2 m-auto" id="fees">
     <div class="container text-center">
         <h2 class="p-5 last-event packeg" style="font-size: 70px !important; border-bottom: 3px solid orange;">PACKAGES</h2>
-        <div class="card-deck" style="justify-content: center;">
-
+        <div class="card-deck w-100" style="justify-content: center;">
+            <!--     MEMBER RATE       -->
             <h4 class="p-3 last-event">MFN Family <span>Members</span> Rates</h4>
-            <div class="mfnRate w-100 d-flex m-auto">
-                <div class="member w-100">
-                    <img src="./Assets/images/fees/1.png" class="m-auto w-100" alt="">
-                    <button class="buttonre type1"style="outline: none">REGISTER</button>
+            <h2 class="p-5 last-event packeg" style="font-size: 70px !important;">WITH ACCOMNDATION</h2>
+            <!--     WITH ACCOMENDATION       -->
+            <div class="mfnRate d-flex">
+                <div class="card mb-3 w-100 m-auto" style="background-color: black;border: 5px solid orange">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="./Assets/images/fees/members/bed+wine.jpg"style="height: 100%" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-left my-auto">
+                                <h1 class="card-title" style="color: white">3DAYS-2NIGHTS</h1>
+                                <P class="card-text"><span style="color: white">BASE PACKAGE: </span> 700$/<span style="text-decoration-line:line-through;color: red">800 $</span></P>
+                                <P class="card-text"><span style="color: white">EXTRA DELGETE: </span> 500$/<span style="text-decoration-line:line-through;color: red">550 $</span</P>
+                                <P class="card-text"><span style="color: white">EACH KID UNDER 12 YEARS: </span> 300$/<span style="text-decoration-line:line-through;color: red">400 $</span</P>
+                                <P class="card-text"><span style="color: white">SPOUSE: </span>150$/<span style="text-decoration-line:line-through;color: red">200 $</span</P>
+                            </div>
+                        </div>
+                        <a class="card-text buttonre type1 w-100 mx-auto mb-3" href="registration.php" style="outline: none;text-decoration: none">REGISTER</a>
+                    </div>
                 </div>
-
-                <div class="member w-100">
-                    <img src="./Assets/images/fees/2.png" class="m-auto w-100" alt="">
-                    <button class="buttonre type1" style="outline: none">REGISTER</button>
-                </div>
-
-                <div class="member w-100">
-                    <img src="./Assets/images/fees/3.png" class="m-auto w-100" alt="">
-                    <button class="buttonre type1" style="outline: none">REGISTER</button>
-                </div>
-
-                <div class="member w-100">
-                    <img src="./Assets/images/fees/4.png" class="m-auto w-100" alt="">
-                    <button class="buttonre type1" style="outline: none">REGISTER</button>
+                <div class="card mb-3 w-100 m-auto" style="background-color: black;border: 5px solid orange">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="./Assets/images/fees/members/bed+wine.jpg"style="height: 100%" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-left my-auto">
+                                <h1 class="card-title" style="color: white">4DAYS-3NIGHTS</h1>
+                                <P class="card-text"><span style="color: white">BASE PACKAGE: </span> 1050$/<span style="text-decoration-line:line-through;color: red">1200$</span></P>
+                                <P class="card-text"><span style="color: white">EXTRA DELGETE: </span> 750$/<span style="text-decoration-line:line-through;color: red">800$</span</P>
+                                <P class="card-text"><span style="color: white">EACH KID UNDER 12 YEARS: </span> 450$/<span style="text-decoration-line:line-through;color: red">500$</span</P>
+                                <P class="card-text"><span style="color: white">SPOUSE: </span>300$/<span style="text-decoration-line:line-through;color: red">350$</span</P>
+                            </div>
+                        </div>
+                        <a class="card-text buttonre type1 w-100 mx-auto mb-3" href="registration.php" style="outline: none;text-decoration: none">REGISTER</a>
+                    </div>
                 </div>
             </div>
-
+            <h2 class="p-5 last-event packeg" style="font-size: 70px !important;">WITHOUT ACCOMNDATION</h2>
+            <!--     WITHOUT ACCOMENDATION       -->
+            <div class="mfnRate d-flex">
+                <div class="card mb-3 w-75 m-auto" style="background-color: black;border: 5px solid orange">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="./Assets/images/fees/members/wine.jpeg"style="height: 100%" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-left my-auto">
+                                <h1 class="card-title" style="color: white">3DAYS</h1>
+                                <P class="card-text"><span style="color: white">BASE PACKAGE: </span>500$/<span style="text-decoration-line:line-through;color: red">600$</span></P>
+                                <P class="card-text"><span style="color: white">EXTRA DELGETE: </span>350$/<span style="text-decoration-line:line-through;color: red">400$</span</P>
+                            </div>
+                        </div>
+                        <a class="card-text buttonre type1 w-100 mx-auto mb-3" href="registration.php" style="outline: none;text-decoration: none">REGISTER</a>
+                    </div>
+                </div>
+                <div class="card mb-3 w-75 m-auto" style="background-color: black;border: 5px solid orange">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="./Assets/images/fees/members/wine.jpeg"style="height: 100%" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-left my-auto">
+                                <h1 class="card-title" style="color: white">4DAYS</h1>
+                                <P class="card-text"><span style="color: white">BASE PACKAGE: </span>650$/<span style="text-decoration-line:line-through;color: red">750$</span></P>
+                                <P class="card-text"><span style="color: white">EXTRA DELGETE: </span>500$/<span style="text-decoration-line:line-through;color: red">600$</span</P>
+                            </div>
+                        </div>
+                        <a class="card-text buttonre type1 w-100 mx-auto mb-3" href="registration.php" style="outline: none;text-decoration: none">REGISTER</a>
+                    </div>
+                </div>
+            </div>
+            <!--     NON MEMBER RATE       -->
             <h4 class="p-3 last-event">MFN Family <span>NON-Members</span> Rates</h4>
-            <div class="mfnRate non-member w-100 d-flex m-auto">
-                <div class="member w-100">
-                    <img src="./Assets/images/fees/11.png"  class="m-auto w-100" alt="">
-                    <button class="buttonre type1" style="outline: none">REGISTER</button>
+            <h2 class="p-5 last-event packeg" style="font-size: 70px !important;">WITH ACCOMNDATION</h2>
+            <!--     WITH ACCOMENDATION       -->
+            <div class="mfnRate d-flex">
+                <div class="card mb-3 w-100 m-auto" style="background-color: black;border: 5px solid orange">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="./Assets/images/fees/members/bed+wine.jpg"style="height: 100%" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-left my-auto">
+                                <h1 class="card-title" style="color: white">3DAYS-2NIGHTS</h1>
+                                <P class="card-text"><span style="color: white">BASE PACKAGE: </span>800$<span style="text-decoration-line:line-through;color: red">900$</span></P>
+                                <P class="card-text"><span style="color: white">EXTRA DELGETE: </span>600$/<span style="text-decoration-line:line-through;color: red">650$</span</P>
+                                <P class="card-text"><span style="color: white">EACH KID UNDER 12 YEARS: </span>400$/<span style="text-decoration-line:line-through;color: red">450$</span</P>
+                                <P class="card-text"><span style="color: white">SPOUSE: </span>200$/<span style="text-decoration-line:line-through;color: red">250$</span</P>
+                            </div>
+                        </div>
+                        <a class="card-text buttonre type1 w-100 mx-auto mb-3" href="registration.php" style="outline: none;text-decoration: none">REGISTER</a>
+                    </div>
                 </div>
-                <div class="member w-100">
-                    <img src="./Assets/images/fees/22.png"  class="m-auto w-100" alt="">
-                    <button class="buttonre type1" style="outline: none">REGISTER</button>
-                </div>
-                <div class="member w-100">
-                    <img src="./Assets/images/fees/33.png"  class="m-auto w-100" alt="">
-                    <button class="buttonre type1" style="outline: none">REGISTER</button>
-                </div>
-                <div class="member w-100">
-                    <img src="./Assets/images/fees/44.png"  class="m-auto w-100" alt="">
-                    <button class="buttonre type1" style="outline: none">REGISTER</button>
+                <div class="card mb-3 w-100 m-auto" style="background-color: black;border: 5px solid orange">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="./Assets/images/fees/members/bed+wine.jpg"style="height: 100%" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-left my-auto">
+                                <h1 class="card-title" style="color: white">4DAYS-3NIGHTS</h1>
+                                <P class="card-text"><span style="color: white">BASE PACKAGE: </span>1150$/<span style="text-decoration-line:line-through;color: red">1250$</span></P>
+                                <P class="card-text"><span style="color: white">EXTRA DELGETE: </span>850$/<span style="text-decoration-line:line-through;color: red">900$</span</P>
+                                <P class="card-text"><span style="color: white">EACH KID UNDER 12 YEARS: </span>500$/<span style="text-decoration-line:line-through;color: red">550$</span</P>
+                                <P class="card-text"><span style="color: white">SPOUSE: </span>325$/<span style="text-decoration-line:line-through;color: red">400$</span</P>
+                            </div>
+                        </div>
+                        <a class="card-text buttonre type1 w-100 mx-auto mb-3" href="registration.php" style="outline: none;text-decoration: none">REGISTER</a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <h2 class="p-5 last-event packeg" style="font-size: 70px !important;">WITHOUT ACCOMNDATION</h2>
+            <!--     WITHOUT ACCOMENDATION       -->
+            <div class="mfnRate d-flex">
+                <div class="card mb-3 w-75 m-auto" style="background-color: black;border: 5px solid orange">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="./Assets/images/fees/members/wine.jpeg"style="height: 100%" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-left my-auto">
+                                <h1 class="card-title" style="color: white">3DAYS</h1>
+                                <P class="card-text"><span style="color: white">BASE PACKAGE: </span>550$/<span style="text-decoration-line:line-through;color: red">600$</span></P>
+                                <P class="card-text"><span style="color: white">EXTRA DELGETE: </span>450$/<span style="text-decoration-line:line-through;color: red">500$</span</P>
+                            </div>
+                        </div>
+                        <a class="card-text buttonre type1 w-100 mx-auto mb-3" href="registration.php" style="outline: none;text-decoration: none">REGISTER</a>
+                    </div>
+                </div>
+                <div class="card mb-3 w-75 m-auto" style="background-color: black;border: 5px solid orange">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="./Assets/images/fees/members/wine.jpeg"style="height: 100%" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-left my-auto">
+                                <h1 class="card-title" style="color: white">4DAYS</h1>
+                                <P class="card-text"><span style="color: white">BASE PACKAGE: </span>750$/<span style="text-decoration-line:line-through;color: red">50$</span></P>
+                                <P class="card-text"><span style="color: white">EXTRA DELGETE: </span>600$/<span style="text-decoration-line:line-through;color: red">650$</span</P>
+                            </div>
+                        </div>
+                        <a class="card-text buttonre type1 w-100 mx-auto mb-3" href="registration.php" style="outline: none;text-decoration: none">REGISTER</a>
+                    </div>
+                </div>
+            </div>
 </section>
 <!-- ##################################                 HOTEL            ################################################################## -->
 <section class="mt-2" id="hotels">
@@ -330,7 +434,7 @@
         </div>
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="abdo200010002@gmail.com" class="env-mail">info@mfnfamily.com</a></p>
+          <p><a type="email" class="env-mail">info@mfnfamily.com</a></p>
         </div>
       </div>
     
@@ -356,6 +460,6 @@
 <!-- ###################################-------------------End Content-------------------############################################################# -->
 <?php include("inc/theme/footer.php")?>
 <script src="./js/home.js"></script>
-</body>
+    </body>
 </html>
 

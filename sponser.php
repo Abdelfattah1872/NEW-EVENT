@@ -257,3 +257,48 @@
 <script src="./js/main.js"></script>
 </body>
 </html>
+if ($bring_Spos == "0"){
+$totalFees = check_coast($package,$bring_exDel,$bring_exKid,$bring_Spos,$withaccoNOTMEM_twoNights,$withaccoNOTMEM_twoNights_extraDel,$withaccoNOTMEM_twoNights_kid,$withaccoNOTMEM_twoNights_spouse,$number_ex_del,$number_ex_kid,$withaccoNOTMEM_threeNights,$withaccoNOTMEM_threeNights_extraDel,$withaccoNOTMEM_threeNights_kid,$withaccoNOTMEM_threeNights_spouse);
+$sql_insrt = "INSERT INTO `requests`(`member`, `membership_id`, `company_name`, `company_phone`, `city`, `country`, `company_adress`, `delegate_name`, `delegate_email`, `delegate_phone`, `delegate_position`, `accommodation`, `Package`, `num_extra_Del`, `spause`, `kids`, `total_coast`,`total_coast`, `comp_email`, `paid` , `sps_data`) VALUES('$member','NA','$comp_name','$comp_phone','$comp_city','$comp_country','$comp_adress','$del_name','$delg_email','$del_phone','$del_position','$accomn','$package','$number_ex_del','$bring_Spos','$number_ex_kid','$totalFees','$comp_email','0','NA')";
+$result = mysqli_query($conn,$sql_insrt);
+if($result) {
+$success = "Thank You We will Contact You Within 2 Working Days :)"."</br>"."YOUR CHOOISE WILL COST YOU :".$totalFees." $";
+$page = $_SERVER['PHP_SELF'];
+$sec = "6";
+header("Refresh: $sec; url=$page");
+}
+}elseif ($bring_Spos == "1"){
+$sps_data = $_POST['ex_spouse_name'];
+$totalFees = check_coast($package,$bring_exDel,$bring_exKid,$bring_Spos,$withaccoNOTMEM_twoNights,$withaccoNOTMEM_twoNights_extraDel,$withaccoNOTMEM_twoNights_kid,$withaccoNOTMEM_twoNights_spouse,$number_ex_del,$number_ex_kid,$withaccoNOTMEM_threeNights,$withaccoNOTMEM_threeNights_extraDel,$withaccoNOTMEM_threeNights_kid,$withaccoNOTMEM_threeNights_spouse);
+$sql_insrt = "INSERT INTO `requests`(`member`, `membership_id`, `company_name`, `company_phone`, `city`, `country`, `company_adress`, `delegate_name`, `delegate_email`, `delegate_phone`, `delegate_position`, `accommodation`, `Package`, `num_extra_Del`, `spause`, `kids`, `total_coast`,`total_coast`, `comp_email`, `paid` , `sps_data`) VALUES('$member','NA','$comp_name','$comp_phone','$comp_city','$comp_country','$comp_adress','$del_name','$delg_email','$del_phone','$del_position','$accomn','$package','$number_ex_del','$bring_Spos','$number_ex_kid','$totalFees','$comp_email','0','$sps_data')";
+$result = mysqli_query($conn,$sql_insrt);
+if($result) {
+$success = "Thank You We will Contact You Within 2 Working Days :)"."</br>"."YOUR CHOOISE WILL COST YOU :".$totalFees." $";
+$page = $_SERVER['PHP_SELF'];
+$sec = "6";
+header("Refresh: $sec; url=$page");
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+$number_ex_del=$_POST['num_ext_del'];
+$totalFees = check_coast_without($package,$bring_exDel,$withoutaccoNOTMEM__twoNights,$withoutaccoNOTMEM__twoNights_extraDel,$number_ex_del,$withoutaccoNOTMEM__threeNights,$withoutaccoNOTMEM__twoNights_extraDel);
+$sql_insrt = "INSERT INTO `requests`(`member`, `membership_id`, `company_name`, `company_phone`, `city`, `country`, `company_adress`, `delegate_name`, `delegate_email`, `delegate_phone`, `delegate_position`, `accommodation`, `Package`, `num_extra_Del`, `spause`, `kids`, `total_coast`, `comp_email`, `paid`)VALUES('$member','NA','$comp_name','$comp_phone','$comp_city','$comp_country','$comp_adress','$del_name','$delg_email','$del_phone','$del_position','$accomn','$package','$number_ex_del','NA','NA','$totalFees','$comp_email','0')";
+$result = mysqli_query($conn,$sql_insrt);
+if($result) {
+$success = "Thank You We will Contact You Within 2 Working Days :)"."</br>"."YOUR CHOOISE WILL COST YOU :".$totalFees." $";
+$page = $_SERVER['PHP_SELF'];
+$sec = "6";
+header("Refresh: $sec; url=$page");
+}
+}
